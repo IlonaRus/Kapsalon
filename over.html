@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Leer ons kennen</title>
+</head>
+<body id="over">
+  <header class="hero header">
+    <div id="navbar"class="navbar top">
+      <h1 class="logo">
+        <span><i class="fas fa-cut"></i> Kapsalon Iris</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="index.html#over">Over Ons</a></li>
+          <li><a href="index.html#prijslijst">Prijslijst</a></li>
+          <li><a href="index.html#afspraken">Afspraken</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content">
+      <h1>Over Ons</h1>
+    </div>
+  </header>
+
+  <main>
+
+    <article class="flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/team/Kim.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h2>Iris</h2>
+            <p class="meta">
+              Eigenaresse | In dienst sinds April 2009
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cumque quidem, recusandae est libero laudantium.</p>
+            <a href="afspraken.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i> 
+              Afspraak Maken
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="flex-columns">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/team/Bob.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary
+            <p class="meta">
+              Barbier | In dienst sinds Juni 2010
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cumque quidem, recusandae est libero laudantium.</p>
+            <a href="afspraken.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i> 
+              Afspraak Maken
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="flex-columns flex-reverse">
+      <div class="row">
+        <div class="column">
+          <div class="column-1">
+            <img src="images/team/Lotte.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="column">
+          <div class="column-2 bg-primary">
+            <h2>Lotte</h2>
+            <p class="meta">
+              Kleurspecialist | In dienst sinds December 2015
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cumque quidem, recusandae est libero laudantium.</p>
+            <a href="afspraken.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i> 
+              Afspraak Maken
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - SalonIris</p>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function() {
+      if(window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if(!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        } 
+        setTimeout(function() {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        },1000);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }; 
+  </script>
+
+</body>
+</html>

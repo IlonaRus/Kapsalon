@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* ___________________________________________________________________________________ */
+/* Basic styling */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+
+/* __________________________________________________________________________________________ */
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover, .navbar a.current{
+  background: #67aeca;
+}
+
+.navbar ul {
+  display: flex;
+  padding-top: 16px;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+.navbar ul li button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: inherit;
+  line-height: 1.6;
+}
+
+
+/* __________________________________________________________________________________________ */
+/* Header */
+
+.hero {
+  background: url('../images/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* Is voor de overlay */
+}
+
+.hero * {
+  z-index: 10;/* Is voor dat de tekst over de overlay komt */
+}
+
+.hero.header {
+  background-image: url('../images/home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
+}
+
+/* ____________________________________________________________________________________________ */
+/* Pop-up */
+
+#loginPopup {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1000; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Fix the button on the left side of the page */
+.open-btn {
+display: flex;
+justify-content: left;
+}
+/* Style and fix the button on the page */
+.open-button {
+background-color: #1c87c9;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+}
+/* Hide the Popup form */
+.form-popup {
+border: 2px solid #666;
+z-index: 9;
+max-width: 300px;
+margin: 0 auto;
+}
+/* Styles for the form container */
+.form-container {
+max-width: 300px;
+padding: 20px;
+background-color: #fff;
+}
+/* Full-width for input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: #eee;
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+/* Style submit/login button */
+.form-container .btn {
+background-color: #67aeca;
+color: #fff;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+/* Style cancel button */
+.form-container .cancel {
+background-color: #cc0000;
+}
+/* Hover effects for buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+
+/* ____________________________________________________________________________________________ */
+/* Icons */
+
+.icons {
+  padding: 20px;
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: #67aeca;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+
+/* ______________________________________________________________________________________ */
+/* Salon */
+
+.salon img:hover {
+  opacity: 0.7;
+}
+
+
+/* ____________________________________________________________________________________________ */
+/* Team */
+
+.team img {
+  border-radius: 50%;
+}
+
+
+/* ______________________________________________________________________________________________ */
+/* Callback Form */
+
+.callback-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+}
+
+.callback-form input:focus {
+  outline-color: #67aeca;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+
+/* _________________________________________________________________________________________ */
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #67aeca;
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}
+
+
+/* ________________________________________________________________________________________________ */
+/* Mobile */
+
+@media(max-width:768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
+}
+
+
+/* _____________________________________________________________________________________________ */
+/* Cards */
+
+.flip-card {
+  margin: 20px;
+  background-color: transparent;
+  width: 348px;
+  height: 380px;
+  perspective: 1000px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  padding-top: 20px;
+  box-shadow: 8px 8px 8px -2px #333;
+  background-color: #67aeca;
+  color: white;
+}
+
+.flip-card-front h1 {
+  padding: 36px;
+}
+
+.flip-card-back {
+  background-color: #bbb;
+  color: black;
+  transform: rotateY(180deg);
+  box-shadow: 8px 8px 8px -2px #333;
+}
+
+.flip-card-back th {
+  padding-left: 52px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  text-align: left;
+}
+
+.flip-card-back td {
+  padding-left: 52px;
+  text-align: left;
+}
+
+.flip-card-back p {
+  padding-top: 64px;
+  font-size: small;
+}
