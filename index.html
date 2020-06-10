@@ -10,7 +10,7 @@
 
   <script src="js/lightbox.min.js"></script>
 
- <!-- Material Design (datepicker, timepicker & drop-down) -->
+ <!-- Material design voor Bootstrap (datepicker, timepicker & drop-down) -->
  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
@@ -30,7 +30,7 @@
       </h1>
       <nav>
         <ul>
-          <li><a class="current" href="#home">Home</a></li>
+          <li><a class="current" href="index.html">Home</a></li>
           <li><a href="over.html">Over Ons</a></li>
           <li><a href="prijslijst.html">Prijslijst</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -41,7 +41,7 @@
 
     <div id="afspraken-popup">
       <div class="form-popup" id="popupForm">
-        <form action="/action_page.php" class="form-container">
+        <form action="" class="form-container">
           <h1>Afspraak maken</h1>
           <input id="datepicker"></input>
        
@@ -56,9 +56,9 @@
           
           <select id="dropdown-kappers">
             <option value="Kies kapper" class="option selected focus">Kies kapper</option>
-            <option value="1">Knippen</option>
-            <option value="2">Verven</option>
-            <option value="3">Fohnen</option>
+            <option value="1">Iris</option>
+            <option value="2">Bob</option>
+            <option value="3">Lotte</option>
           </select>
                
           <label for="naam">Naam</label>
@@ -80,7 +80,7 @@
     <div class="content">
       <h1>Kapsalon Iris</h1>
       <p>Wij knippen haar</p>
-      <a href="over.html" class="btn"><i class="fas fa-chevron-right"></i> Leer Ons Kennen</a>
+      <a href="over.html" class="btn"><i class="fas fa-chevron-right"></i> Meer weten?</a>
     </div>
   </header>
   <main>
@@ -96,11 +96,11 @@
         <div class="column">
           <div class="column-2 bg-primary">
             <h4>Wie zijn wij?</h4>
-            <h2>Wij kunnen super goed haar knippen</h2>
+            <h2>Niet lullen maar knippen</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cumque quidem, recusandae est libero laudantium.</p>
             <a href="over.html" class="btn btn-dark">
               <i class="fas fa-chevron"></i> 
-              Leer Ons Kennen
+              Leer ons kennen
             </a>
           </div>
         </div>
@@ -224,10 +224,7 @@
           <div class="column-2 bg-primary">
             <h2>Maak een makkelijk online een afspraak</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cumque quidem, recusandae est libero laudantium.</p>
-            <a href="afspraken.html" class="btn btn-dark">
-              <i class="fas fa-chevron"></i> 
-              Afspraak Maken
-            </a>
+            <button class="btn btn-dark" onclick="openPopupForm()">Afspraak maken</button>
           </div>
         </div>
       </div>
@@ -246,10 +243,7 @@
     <p>Copyright &copy; 2020 - SalonIris</p>
   </footer>
 
-  <!-- JQuery -->
- 
-
-  <!-- Javascript voor de effectjes voor de header. Voor de DOM -->
+  <!-- Javascript voor de effectjes voor de header -->
   <script>
     const navbar = document.getElementById('navbar');
     let scrolled = false;
@@ -287,7 +281,7 @@
       });
   </script>
 
-  <!-- Javascript Voor de pop-up -->
+  <!-- Javascript voor de pop-up -->
   <script>
     function openPopupForm() {
       document.getElementById("afspraken-popup").style.display="block";
@@ -305,6 +299,7 @@
     }
   </script>
   
+  <!-- JQuery voor de pop-up-->
   <script>
     $('#datepicker').datepicker({
     showOtherMonths: true});
@@ -322,7 +317,6 @@
   <script>
     $('#dropdown-kappers').dropdown();
   </script>
-
 
 </body>
 </html>
