@@ -9,6 +9,8 @@ Maar ook het gebruik van library's, Bootstrap en toepassing van JQuery en Javasc
 Daarnaast heb ik rekening gehouden met de responsiveness en accessibility van de website.\
 Er zit verder geen logica in de website. Dat wil zeggen dat er geen formulieren worden verzonden en de linkjes in de footer niet werken. Dit is puur bedoeld als demonstratie van mijn code schrijfstijl en oog voor design.
 
+https://ilonarus.github.io/Kapsalon/
+
 
 ### Website
 **Homepage:**\
