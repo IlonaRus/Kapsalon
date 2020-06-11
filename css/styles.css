@@ -201,7 +201,6 @@ background-color: #ddd;
 outline: none;
 }
 
-
 /* Button styling */
 .form-container .btn {
 width: 100%;
@@ -236,52 +235,43 @@ opacity: 1;
 
 
 /* ______________________________________________________________________________________ */
-/* Salon */
+/* Werk */
 
-.salon img:hover {
+.werk img:hover {
   opacity: 0.7;
 }
 
 
-/* ____________________________________________________________________________________________ */
-/* Team */
-
-.team img {
-  border-radius: 50%;
-}
-
-
 /* ______________________________________________________________________________________________ */
-/* Callback Form */
+/* Contact Form */
 
-.callback-form {
+.contact-form {
   width: 100%;
   padding: 20px 0;
 }
 
-.callback-form label {
+.contact-form label {
   display: block;
   margin-bottom: 5px;
 }
 
-.callback-form .form-control {
+.contact-form .form-control {
   margin-bottom: 15px;
 }
 
-.callback-form input {
+.contact-form input {
   width: 100%;
   padding: 4px;
   height: 40px;
   border: #f5f5f5 1px solid;
 }
 
-.callback-form input:focus {
+.contact-form input:focus {
   outline-color: #67aeca;
 }
 
-.callback-form .btn {
-  padding: 12px 0;
-  margin-top: 20px;
+.contact-form button {
+  width: inherit;
 }
 
 
@@ -333,21 +323,17 @@ opacity: 1;
     flex: 100%;
     max-width: 100%;
   }
-
-  .team img {
-    width: 70%;
-  }
 }
 
 
 /* _____________________________________________________________________________________________ */
-/* Cards */
+/* Flip Cards */
 
 .flip-card {
   margin: 20px;
   background-color: transparent;
-  width: 348px;
-  height: 380px;
+  width: 370px;
+  height: 440px;
   perspective: 1000px;
 }
 
