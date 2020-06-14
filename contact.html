@@ -29,7 +29,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="over.html">Over Ons</a></li>
+          <li><a href="over.html">Over</a></li>
           <li><a href="prijslijst.html">Prijslijst</a></li>
           <li><a class="current" href="contact.html">Contact</a></li>
           <li><button class="btn btn-light" onclick="openPopupForm()">Afspraak maken</button></li>
@@ -58,6 +58,16 @@
             <option value="2">Bob</option>
             <option value="3">Lotte</option>
           </select>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Praatje?</label>
+          </div>
+
+          <div class="onderwerp">
+            <label for="onderwerp">Onderwerp</label>
+            <input type="text" id="onderwerp" placeholder="Vul een onderwerp in" name="onderwerp">
+          </div>
                
           <label for="naam">Naam</label>
           <input type="text" id="naam" placeholder="Naam" name="naam" required>
