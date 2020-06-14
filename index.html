@@ -31,7 +31,7 @@
       <nav>
         <ul>
           <li><a class="current" href="index.html">Home</a></li>
-          <li><a href="over.html">Over Ons</a></li>
+          <li><a href="over.html">Over</a></li>
           <li><a href="prijslijst.html">Prijslijst</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><button class="btn btn-light" onclick="openPopupForm()">Afspraak maken</button></li>
@@ -43,14 +43,14 @@
       <div class="form-popup" id="popupForm">
         <form action="" class="form-container">
           <h1>Afspraak maken</h1>
-          <input id="datepicker"></input>
+          <input id="datepicker">
        
-          <input id="timepicker"></input>
+          <input id="timepicker">
          
           <select id="dropdown-behandelingen">
             <option value="Kies behandeling" class="option selected focus">Kies behandeling</option>
-            <option value="1">Knippen</option>
-            <option value="2">Verven</option>
+            <option value="1">Kleuren</option>
+            <option value="2">Knippen</option>
             <option value="3">Fohnen</option>
           </select>
           
@@ -60,14 +60,20 @@
             <option value="2">Bob</option>
             <option value="3">Lotte</option>
           </select>
-               
-          <label for="naam">Naam</label>
-          <input type="text" id="naam" placeholder="Naam" name="naam" required>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Praatje?</label>
+          </div>
+
+          <div class="onderwerp">
+            <input type="text" id="onderwerp" placeholder="Vul een onderwerp in" name="onderwerp">
+          </div>
           
-          <label for="telefoonnummer">Telefoonnummer</label>
+          <input type="text" id="naam" placeholder="Naam" name="naam" required>
+        
           <input type="text" id="telefoonnummer" placeholder="Telefoonnummer" name="telefoonnummer" required>
           
-          <label for="email">E-mail</label>
           <input type="text" id="email" placeholder="E-mail" name="email" required>
           
           <button type="submit" class="btn" onclick="closePopupForm()">Verzenden</button>
@@ -107,45 +113,45 @@
       </div>
     </section>
 
-    <!-- Salon -->
-    <section id="salon" class="salon flex-grid section-padding">
+    <!-- Werk -->
+    <section id="werk" class="werk flex-grid section-padding">
       <header class="section-header">
         <h4>Ons werk</h4>
         <h2>Dit hebben wij gedaan</h2>
       </header>
       <div class="row">
         <div class="column">
-          <a href="images/resultaten/paarshaar.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/paarshaar.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/paarshaar.jpg" alt=""/>
           </a>
-          <a href="images/resultaten/mannenhaar2.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/mannenhaar2.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/mannenhaar2.jpg" alt=""/>
           </a>
         </div>
 
         <div class="column">  
-          <a href="images/resultaten/krullendhaar.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/krullendhaar.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/krullendhaar.jpg" alt=""/>
           </a>
-          <a href="images/resultaten/bruidshaar2.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/bruidshaar2.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/bruidshaar2.jpg" alt=""/>
           </a>
         </div>
 
         <div class="column">  
-          <a href="images/resultaten/bruidshaar.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/bruidshaar.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/bruidshaar.jpg" alt=""/>
           </a>
-          <a href="images/resultaten/krullendhaar2.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/krullendhaar2.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/krullendhaar2.jpg" alt=""/>
           </a>
         </div>
 
         <div class="column">  
-          <a href="images/resultaten/blondeman.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/blondeman.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/blondeman.jpg" alt=""/>
           </a>
-          <a href="images/resultaten/mannehaar4.jpg" data-lightbox="salon" data-title="Lorem ipsum dolor sit, amet consectetur">
+          <a href="images/resultaten/mannehaar4.jpg" data-lightbox="werk" data-title="Lorem ipsum dolor sit, amet consectetur">
             <img src="images/resultaten/mannehaar4.jpg" alt=""/>
           </a>
         </div>
@@ -316,6 +322,10 @@
 
   <script>
     $('#dropdown-kappers').dropdown();
+  </script>
+
+  <script>
+    var $chkb = $('#checkbox').checkbox();
   </script>
 
 </body>
