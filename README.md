@@ -46,7 +46,7 @@ Hier heb ik de prijslijsten weergegeven op flip-cards. Deze hebben een front en 
 
 \
 **Contact:**\
-Hier heb ik een simpel contactformulier gebruikt.
+Hier heb ik een simpel contactformulier gebruikt met een aantal invoervelden en een vezendknop.
 
 
 ### Code
