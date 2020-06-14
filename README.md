@@ -48,7 +48,7 @@ Hier heb ik de prijslijsten weergegeven op flip-cards. Deze hebben een front en 
 **Contact:**\
 Hier heb ik een simpel contactformulier gebruikt.
 
-\
+
 ### Code
 Elke pagina op deze website bestaat uit een header, content en footer.
 Ik heb er voor gekozen om de css in twee bestanden te zetten. Een utilities.css voor de styling van algemene elementen en styles.css 
