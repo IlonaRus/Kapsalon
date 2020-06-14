@@ -153,6 +153,12 @@ background-color: rgba(0,0,0,0.4);
 }
 
 /* Datepicker & timepicker styling */
+.form-popup {
+  z-index: 9;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .gj-icon {
   left: 154px; 
 }
@@ -160,7 +166,7 @@ background-color: rgba(0,0,0,0.4);
 .gj-datepicker, .gj-timepicker {
   width: max-content;
   display: inline-block;
-  padding-right: 60px;
+  padding-right: 48px;
   padding-bottom: 20px;
 }
 
@@ -168,17 +174,32 @@ background-color: rgba(0,0,0,0.4);
   display: inline-block;
   padding-right: 60px;
   padding-bottom: 20px;
-  width: 238px;
+  width: 226px;
 }
-/* 
-.form-popup .gj-picker-md [role="header"] {
-  background: red;
-} */
 
-.form-popup {
-z-index: 9;
-max-width: 600px;
-margin: 0 auto;
+/* Timepicker Color Styling */
+.gj-picker-md [role="header"], .gj-picker-md [role=body] [role=arrow], .gj-picker-md .arrow-begin, .gj-picker-md .arrow-end {
+  background: #67aeca;
+}
+
+.gj-picker-md .arrow-end {
+  border: 16px solid #67aeca;
+}
+
+.gj-picker-md [role=footer] button.gj-button-md {
+  color: #67aeca;
+}
+
+
+.checkbox {
+  display: inline-block;
+  color: #333;
+}
+
+.onderwerp {
+  display: inline-block;
+  width: 364px;
+  margin-left: 10px;
 }
 
 /* Form-container styling */
@@ -190,7 +211,7 @@ background-color: #fff;
 
 .form-container input[type=text] {
 width: 100%;
-padding: 10px;
+padding: 14px;
 margin: 5px 0 22px 0;
 border: none;
 background: #eee;
@@ -311,8 +332,13 @@ opacity: 1;
   }
 
   .navbar a {
-    padding: 10px 10px;
+    padding: 10px 6px;
     margin: 0 3px;
+  }
+
+  .navbar button {
+    width: 100px;
+    padding-left: 18px;
   }
 
   .flex-items {
@@ -322,6 +348,15 @@ opacity: 1;
   .flex-columns .column, .flex-grid .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .checkbox {
+    display: block;
+  }
+
+  .onderwerp {
+    width: 332px;
+    margin: 5px 0 1px 0;
   }
 }
 
