@@ -155,7 +155,7 @@ background-color: rgba(0,0,0,0.4);
 /* Datepicker & timepicker styling */
 .form-popup {
   z-index: 9;
-  max-width: 500px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -348,6 +348,10 @@ opacity: 1;
   .flex-columns .column, .flex-grid .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .form-popup {
+    width: 100%;
   }
 
   .checkbox {
