@@ -17,9 +17,9 @@ https://ilonarus.github.io/Kapsalon/
 ### Website
 **Homepage:**\
 De homepage bevat een aantal sections. 
-- De header heeft een effectje. Dit gedaan met Javascript.
+- De header heeft een scroll-effect. Dit heb ik gedaan met Javascript.
 - Onder 'ons werk' heb ik Lightbox gebruikt voor de afbeeldingen. http://lokeshdhakar.com/projects/lightbox2/
-- De knoppen op deze pagina (met uitzondering van 'Afspraak maken') zijn linkjes naar andere pagina's
+- De knoppen op deze pagina (met uitzondering van 'Afspraak maken') zijn linkjes naar andere pagina's.
 - Voor de icoontjes heb ik gebruik gemaakt van Font Awesome. https://fontawesome.com/
 
 \
