@@ -244,11 +244,6 @@ opacity: 1;
   padding: 20px;
 }
 
-.icons h3 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
 .icons i {
   background-color: #67aeca;
   color: #fff;
@@ -272,11 +267,6 @@ opacity: 1;
 .contact-form {
   width: 100%;
   padding: 20px 0;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
 }
 
 .contact-form .form-control {
@@ -321,65 +311,6 @@ opacity: 1;
 
 .footer .social > * {
   margin-right: 30px;
-}
-
-
-/* ________________________________________________________________________________________________ */
-/* Mobile */
-
-@media(max-width:768px) {
-  .navbar {
-    flex-direction: column;
-    height: 120px;
-    padding: 20px;
-  }
-
-  .navbar a {
-    padding: 10px 6px;
-    margin: 0 3px;
-  }
-
-  .navbar button {
-    width: 100px;
-    padding-left: 18px;
-  }
-
-  .flex-items {
-    flex-direction: column;
-  }
-
-  .flex-columns .column, .flex-grid .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-  
-  /* Pop-up voor mobiel */
-  .gj-datepicker, .gj-timepicker, .gj-dropdown button {
-    width: 42%;
-  }
-
-  .gj-icon.clock, .gj-datepicker .gj-icon {
-    left: 130px; 
-  }
-
-  #datepicker input {
-    width: 108%;
-  }
-
-  .checkbox {
-    display: block;
-  }
-
-  .onderwerp {
-    width: 72%;
-    margin: 5px 0 1px 0;
-  }
-
-  #telefoonnummer, #naam, #email, .form-container .btn {
-    width: 72%;
-  }
-
 }
 
 
@@ -448,4 +379,62 @@ opacity: 1;
 .flip-card-back p {
   padding-top: 64px;
   font-size: small;
+}
+
+
+/* ________________________________________________________________________________________________ */
+/* Mobile */
+
+@media(max-width:768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 6px;
+    margin: 0 3px;
+  }
+
+  .navbar button {
+    width: 100px;
+    padding-left: 18px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  
+  /* Pop-up voor mobiel */
+  .gj-datepicker, .gj-timepicker, .gj-dropdown button {
+    width: 42%;
+  }
+
+  .gj-icon.clock, .gj-datepicker .gj-icon {
+    left: 130px; 
+  }
+
+  #datepicker input {
+    width: 108%;
+  }
+
+  .checkbox {
+    display: block;
+  }
+
+  .onderwerp {
+    width: 72%;
+    margin: 5px 0 1px 0;
+  }
+
+  #telefoonnummer, #naam, #email, .form-container .btn {
+    width: 72%;
+  }
 }
