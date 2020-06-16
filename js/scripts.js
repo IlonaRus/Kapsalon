@@ -23,6 +23,7 @@ window.onscroll = function () {
 var modalLoaded = false;
 function openPopupForm() {
   $('#afspraken-popup').slideDown();
+  $('body').css('overflow', 'hidden');
   if (!modalLoaded) {
     modalLoaded = true;
     $.get('pop-up.html').then((data) => {
@@ -42,12 +43,13 @@ function openPopupForm() {
       $('#dropdown-kappers').dropdown();
 
       var $chkb = $('#checkbox').checkbox();
-    })
+    });
   }
 }
 
 function closePopupForm() {
   $('#afspraken-popup').fadeOut();
+  $('body').css('overflow', 'auto');
 }
 
 
