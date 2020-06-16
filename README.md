@@ -55,5 +55,5 @@ Ik heb er voor gekozen om de css in twee bestanden te zetten. Een utilities.css 
 voor de overige elementen. 
 In de css bestanden heb ik de verschillende onderdelen gegroepeerd zodat het overzichtelijker is.
 
-Het is statische code. Er hoeft niets gerund of gebuild te worden.
+Het is statische code. Er hoeft niets gerund te worden.
 
