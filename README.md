@@ -52,5 +52,8 @@ Hier heb ik een simpel contactformulier gebruikt met een aantal invoervelden en 
 ### Code
 Elke pagina op deze website bestaat uit een header, content en footer.
 Ik heb er voor gekozen om de css in twee bestanden te zetten. Een utilities.css voor de styling van algemene elementen en styles.css 
-voor de overige elementen.
+voor de overige elementen. 
 In de css bestanden heb ik de verschillende onderdelen gegroepeerd zodat het overzichtelijker is.
+
+Het is statische code. Er hoeft niets gerund of gebuild te worden.
+
