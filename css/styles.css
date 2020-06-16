@@ -172,9 +172,12 @@ background-color: rgba(0,0,0,0.4);
 
 .gj-dropdown {
   display: inline-block;
-  padding-right: 60px;
   padding-bottom: 20px;
   width: 226px;
+}
+
+.gj-dropdown button {
+  width: 178px;
 }
 
 /* Timepicker Color Styling */
@@ -350,8 +353,18 @@ opacity: 1;
     max-width: 100%;
   }
 
-  .form-popup {
-    width: 100%;
+  
+  /* Pop-up voor mobiel */
+  .gj-datepicker, .gj-timepicker, .gj-dropdown button {
+    width: 42%;
+  }
+
+  .gj-icon.clock, .gj-datepicker .gj-icon {
+    left: 130px; 
+  }
+
+  #datepicker input {
+    width: 108%;
   }
 
   .checkbox {
@@ -359,9 +372,14 @@ opacity: 1;
   }
 
   .onderwerp {
-    width: 332px;
+    width: 72%;
     margin: 5px 0 1px 0;
   }
+
+  #telefoonnummer, #naam, #email, .form-container .btn {
+    width: 72%;
+  }
+
 }
 
 
