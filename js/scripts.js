@@ -1,4 +1,4 @@
-// <!-- Javascript voor de effectjes voor de header (tijdelijk verbergen van de navbar als je naar onder scrollt, eenmalig, volgens mij) -->
+// Javascript voor de effectjes voor de header
 const navbar = document.getElementById('navbar');
 let scrolled = false;
 
@@ -19,7 +19,7 @@ window.onscroll = function () {
 }
 
 
-// <!-- Javascript voor de pop-up -->
+// Javascript voor de pop-up 
 var modalLoaded = false;
 function openPopupForm() {
   $('#afspraken-popup').slideDown();
@@ -29,7 +29,7 @@ function openPopupForm() {
     $.get('pop-up.html').then((data) => {
       $('#popupForm').html(data);
 
-      // <!-- JQuery voor de pop-up-->
+      // JQuery voor de pop-up
       $('#datepicker').datepicker({
         showOtherMonths: true
       });
