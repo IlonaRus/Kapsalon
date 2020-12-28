@@ -11,7 +11,7 @@ Daarnaast heb ik rekening gehouden met de responsiveness en accessibility van de
 \
 Er zit verder geen logica in de website. Dat wil zeggen dat er geen formulieren worden verzonden en de linkjes in de footer niet werken. Dit is puur bedoeld als demonstratie van mijn code schrijfstijl en oog voor design.
 
-https://ilonarus.github.io/Kapsalon/
+https://upbeat-aryabhata-f89dd0.netlify.app/
 
 
 ### Website
@@ -46,7 +46,7 @@ Hier heb ik de prijslijsten weergegeven op flip-cards. Deze hebben een front en 
 
 \
 **Contact:**\
-Hier heb ik een simpel contactformulier gebruikt met een aantal invoervelden en een vezendknop.
+Hier heb ik een simpel contactformulier gebruikt met een aantal invoervelden en een verzendknop.
 
 
 ### Code
@@ -54,6 +54,8 @@ Elke pagina op deze website bestaat uit een header, content en footer.
 Ik heb er voor gekozen om de css in twee bestanden te zetten. Een utilities.css voor de styling van algemene elementen en styles.css 
 voor de overige elementen. 
 In de css bestanden heb ik de verschillende onderdelen gegroepeerd zodat het overzichtelijker is.
+
+De website is gedeployed met Netlify.
 
 Het is statische code. Er hoeft niets gerund te worden.
 
